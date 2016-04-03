@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED1C29691C77551100E2F869 /* MainVizScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED1C29671C77551100E2F869 /* MainVizScene.cpp */; };
+		ED1C296C1C775C5F00E2F869 /* AffectedPropertyManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED1C296A1C775C5F00E2F869 /* AffectedPropertyManager.cpp */; };
+		ED4AADEE1C73A5F70059AF17 /* V3dAudioListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED4AADEC1C73A5F70059AF17 /* V3dAudioListener.cpp */; };
+		ED4AADF01C73B3B90059AF17 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4AADEF1C73B3B90059AF17 /* libc++.tbd */; };
+		ED50949B1C7263D9002CCACF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50949A1C7263D9002CCACF /* AppDelegate.m */; };
+		ED50949E1C7263D9002CCACF /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED50949D1C7263D9002CCACF /* main.mm */; };
+		ED5094AB1C726554002CCACF /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = ED5094AA1C726554002CCACF /* Resources */; };
+		EDBDA55A1C938E70007878AE /* EventReciever.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDBDA5581C938E70007878AE /* EventReciever.cpp */; };
+		EDE9843C1C8C6D9100355E57 /* Director.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDE9843A1C8C6D9100355E57 /* Director.cpp */; };
+		EDE9843F1C8C6DC000355E57 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDE9843D1C8C6DC000355E57 /* Scene.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED1C29561C76B2D000E2F869 /* AffectedProperty.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AffectedProperty.hpp; sourceTree = "<group>"; };
+		ED1C29581C76B2D000E2F869 /* EffectFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectFilter.hpp; sourceTree = "<group>"; };
+		ED1C295C1C76B30600E2F869 /* EffectManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectManager.hpp; sourceTree = "<group>"; };
+		ED1C295F1C76B73400E2F869 /* ScaleAffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ScaleAffect.hpp; sourceTree = "<group>"; };
+		ED1C29621C76C58300E2F869 /* UniformColorAffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UniformColorAffect.hpp; sourceTree = "<group>"; };
+		ED1C29671C77551100E2F869 /* MainVizScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainVizScene.cpp; sourceTree = "<group>"; };
+		ED1C29681C77551100E2F869 /* MainVizScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainVizScene.hpp; sourceTree = "<group>"; };
+		ED1C296A1C775C5F00E2F869 /* AffectedPropertyManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AffectedPropertyManager.cpp; sourceTree = "<group>"; };
+		ED1C296B1C775C5F00E2F869 /* AffectedPropertyManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AffectedPropertyManager.hpp; sourceTree = "<group>"; };
+		ED1C296D1C775EC400E2F869 /* Affects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Affects.h; sourceTree = "<group>"; };
+		ED4AADEC1C73A5F70059AF17 /* V3dAudioListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = V3dAudioListener.cpp; sourceTree = "<group>"; };
+		ED4AADED1C73A5F70059AF17 /* V3dAudioListener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = V3dAudioListener.hpp; sourceTree = "<group>"; };
+		ED4AADEF1C73B3B90059AF17 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		ED4AADF11C7427690059AF17 /* concurrentqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = concurrentqueue.h; sourceTree = "<group>"; };
+		ED5094961C7263D8002CCACF /* IrrlichtV3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrrlichtV3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED5094991C7263D8002CCACF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ED50949A1C7263D9002CCACF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ED50949D1C7263D9002CCACF /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		ED5094A41C7263D9002CCACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5094AA1C726554002CCACF /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resources; path = IrrlichtV3/Resources; sourceTree = "<group>"; };
+		EDBDA5581C938E70007878AE /* EventReciever.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventReciever.cpp; path = ../EventReciever.cpp; sourceTree = "<group>"; };
+		EDBDA5591C938E70007878AE /* EventReciever.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EventReciever.hpp; path = ../EventReciever.hpp; sourceTree = "<group>"; };
+		EDE5F2741C77845600BAF40A /* DampedVelocityProperty.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DampedVelocityProperty.hpp; sourceTree = "<group>"; };
+		EDE5F2751C77860700BAF40A /* DampedBoundedVelocityProperty.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DampedBoundedVelocityProperty.hpp; sourceTree = "<group>"; };
+		EDE9843A1C8C6D9100355E57 /* Director.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Director.cpp; sourceTree = "<group>"; };
+		EDE9843B1C8C6D9100355E57 /* Director.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Director.hpp; sourceTree = "<group>"; };
+		EDE9843D1C8C6DC000355E57 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		EDE9843E1C8C6DC000355E57 /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED5094931C7263D8002CCACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4AADF01C73B3B90059AF17 /* libc++.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED50948D1C7263D8002CCACF = {
+			isa = PBXGroup;
+			children = (
+				ED4AADEF1C73B3B90059AF17 /* libc++.tbd */,
+				ED5094981C7263D8002CCACF /* IrrlichtV3 */,
+				ED5094AC1C726623002CCACF /* New Group */,
+			);
+			sourceTree = "<group>";
+		};
+		ED5094971C7263D8002CCACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED5094AA1C726554002CCACF /* Resources */,
+				ED5094961C7263D8002CCACF /* IrrlichtV3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED5094981C7263D8002CCACF /* IrrlichtV3 */ = {
+			isa = PBXGroup;
+			children = (
+				ED4AADF11C7427690059AF17 /* concurrentqueue.h */,
+				ED4AADEC1C73A5F70059AF17 /* V3dAudioListener.cpp */,
+				ED4AADED1C73A5F70059AF17 /* V3dAudioListener.hpp */,
+				ED5094991C7263D8002CCACF /* AppDelegate.h */,
+				ED50949A1C7263D9002CCACF /* AppDelegate.m */,
+				ED1C29561C76B2D000E2F869 /* AffectedProperty.hpp */,
+				ED1C29581C76B2D000E2F869 /* EffectFilter.hpp */,
+				ED5094A41C7263D9002CCACF /* Info.plist */,
+				ED50949C1C7263D9002CCACF /* Supporting Files */,
+				ED1C295C1C76B30600E2F869 /* EffectManager.hpp */,
+				ED1C295F1C76B73400E2F869 /* ScaleAffect.hpp */,
+				ED1C29621C76C58300E2F869 /* UniformColorAffect.hpp */,
+				ED1C29671C77551100E2F869 /* MainVizScene.cpp */,
+				ED1C29681C77551100E2F869 /* MainVizScene.hpp */,
+				ED1C296A1C775C5F00E2F869 /* AffectedPropertyManager.cpp */,
+				ED1C296B1C775C5F00E2F869 /* AffectedPropertyManager.hpp */,
+				ED1C296D1C775EC400E2F869 /* Affects.h */,
+				EDE5F2741C77845600BAF40A /* DampedVelocityProperty.hpp */,
+				EDE5F2751C77860700BAF40A /* DampedBoundedVelocityProperty.hpp */,
+				EDE9843A1C8C6D9100355E57 /* Director.cpp */,
+				EDE9843B1C8C6D9100355E57 /* Director.hpp */,
+				EDE9843D1C8C6DC000355E57 /* Scene.cpp */,
+				EDE9843E1C8C6DC000355E57 /* Scene.hpp */,
+				EDBDA5581C938E70007878AE /* EventReciever.cpp */,
+				EDBDA5591C938E70007878AE /* EventReciever.hpp */,
+			);
+			path = IrrlichtV3;
+			sourceTree = "<group>";
+		};
+		ED50949C1C7263D9002CCACF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED50949D1C7263D9002CCACF /* main.mm */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ED5094AC1C726623002CCACF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				ED5094971C7263D8002CCACF /* Products */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED5094951C7263D8002CCACF /* IrrlichtV3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED5094A71C7263D9002CCACF /* Build configuration list for PBXNativeTarget "IrrlichtV3" */;
+			buildPhases = (
+				ED5094921C7263D8002CCACF /* Sources */,
+				ED5094931C7263D8002CCACF /* Frameworks */,
+				ED5094941C7263D8002CCACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IrrlichtV3;
+			productName = IrrlichtV3;
+			productReference = ED5094961C7263D8002CCACF /* IrrlichtV3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED50948E1C7263D8002CCACF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Benjamin Trapani";
+				TargetAttributes = {
+					ED5094951C7263D8002CCACF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = ED5094911C7263D8002CCACF /* Build configuration list for PBXProject "IrrlichtV3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED50948D1C7263D8002CCACF;
+			productRefGroup = ED5094971C7263D8002CCACF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED5094951C7263D8002CCACF /* IrrlichtV3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED5094941C7263D8002CCACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5094AB1C726554002CCACF /* Resources in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED5094921C7263D8002CCACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE9843F1C8C6DC000355E57 /* Scene.cpp in Sources */,
+				EDBDA55A1C938E70007878AE /* EventReciever.cpp in Sources */,
+				EDE9843C1C8C6D9100355E57 /* Director.cpp in Sources */,
+				ED50949E1C7263D9002CCACF /* main.mm in Sources */,
+				ED50949B1C7263D9002CCACF /* AppDelegate.m in Sources */,
+				ED1C29691C77551100E2F869 /* MainVizScene.cpp in Sources */,
+				ED4AADEE1C73A5F70059AF17 /* V3dAudioListener.cpp in Sources */,
+				ED1C296C1C775C5F00E2F869 /* AffectedPropertyManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED5094A51C7263D9002CCACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ED5094A61C7263D9002CCACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ED5094A81C7263D9002CCACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				INFOPLIST_FILE = IrrlichtV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
+				OTHER_LDFLAGS = (
+					"-lIrrlicht",
+					"-lAquila",
+					"-lOoura_fft",
+					"-lportaudio",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OBE.IrrlichtV3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ED5094A91C7263D9002CCACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				INFOPLIST_FILE = IrrlichtV3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
+				OTHER_LDFLAGS = (
+					"-lIrrlicht",
+					"-lAquila",
+					"-lOoura_fft",
+					"-lportaudio",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = OBE.IrrlichtV3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED5094911C7263D8002CCACF /* Build configuration list for PBXProject "IrrlichtV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5094A51C7263D9002CCACF /* Debug */,
+				ED5094A61C7263D9002CCACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED5094A71C7263D9002CCACF /* Build configuration list for PBXNativeTarget "IrrlichtV3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5094A81C7263D9002CCACF /* Debug */,
+				ED5094A91C7263D9002CCACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED50948E1C7263D8002CCACF /* Project object */;
+}

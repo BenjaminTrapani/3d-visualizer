@@ -1,0 +1,13 @@
+#Produced by Art of Illusion 2.3.1, Wed Sep 20 21:48:21 CEST 2006
+newmtl schwarz
+Kd 1 1 1
+map_Kd shuttle2.jpg
+Ks 0 0 0
+Ka 0 0 0
+illum 1
+newmtl fluegel
+Kd 1 1 1
+map_Kd shuttle1.jpg
+Ks 0 0 0
+Ka 0 0 0
+illum 1
