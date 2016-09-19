@@ -39,8 +39,8 @@ _pGui(pGui), _argv(argv){
 }
 
 void MainVizScene::createFilters(){
-    DampedVelocityProperty<double> colorVelCore(0.0, 1000000000000000000.0, 0.01, 1.0);
-    DampedBoundedVelocityProperty<double> colorVelProp(colorVelCore, 0.1, 1);
+    DampedVelocityProperty<double> colorVelCore(0.0, 1000000.0, 1000.0, 1.0);
+    DampedBoundedVelocityProperty<double> colorVelProp(colorVelCore, 0.1, 10);
     
     for(int i = 0; i < _pAudioListener->getFftBinCount(); i++){
         Effect_t * uniformColorFilter = new Effect_t(i, i+1, 2300000000000000000.0, colorVelProp);
@@ -122,9 +122,9 @@ void MainVizScene::setupScene(){
                                                                  pBoadNoad, irr::video::SColor(255,0,0,255));
     _pAffectedPropManager->addAffectedProperty(pBoatEffect);*/
     
-    createDeer(128, vector3df(2000, 2000, 2000), "untitled-scene.obj" , 10, vector3df(-1000,-1000,-1000));
-    createDeer(256, vector3df(2000, 2000, 2000), "bird.obj" , 4, vector3df(-1000,-1000,-1000));
-    createDeer(128, vector3df(2000, 2000, 2000), "clock.obj" , 4, vector3df(-1000,-1000,-1000));
+    createDeer(16, vector3df(2000, 2000, 2000), "untitled-scene.obj" , 10, vector3df(-1000,-1000,-1000));
+    createDeer(32, vector3df(2000, 2000, 2000), "bird.obj" , 4, vector3df(-1000,-1000,-1000));
+    createDeer(16, vector3df(2000, 2000, 2000), "clock.obj" , 4, vector3df(-1000,-1000,-1000));
     _pAudioListener->start(index);
     //createDeer(10, vector3df(500,500,500), "tim-island-base-2000-with-bar-area.obj", 80);
 }
@@ -165,7 +165,7 @@ void MainVizScene::createDeer(unsigned int count, const irr::core::vector3df & m
         int index = rand()%_pAudioListener->getFftBinCount();
         AffectedProperty<K_AFFECTTYPE_COLOR, Effect_t> * pDeerColor = new AffectedProperty<K_AFFECTTYPE_COLOR, Effect_t>(
                                                                                                                          _pEffectManager->getFilterForIndex(index),
-                                                                                                                          pDeerNode, irr::video::SColor(rand()%255,rand()%255,rand()%255,255));
+                                                                                                                          pDeerNode, irr::video::SColor(rand()%255+128,rand()%255+128,rand()%255+128,255));
         AffectedProperty<K_AFFECTTYPE_SCALE, Effect_t> * pDeerScale = new
             AffectedProperty<K_AFFECTTYPE_SCALE, Effect_t>(_pEffectManager->getFilterForIndex(index), pDeerNode,
                                                            irr::core::vector3df(1.0f, 1.0f, 1.0f));

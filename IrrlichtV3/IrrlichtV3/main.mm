@@ -65,7 +65,7 @@ int main(int argc, char** argv)
     MyEventReceiver eventReciever;
     IrrlichtDevice *device =
     createDevice( video::EDT_OPENGL, irr::core::dimension2d<u32>(640, 480), 16,
-                 true, false, false, &eventReciever);
+                 false, false, false, &eventReciever);
     device->setResizable(true);
     
     video::IVideoDriver* driver = device->getVideoDriver();
